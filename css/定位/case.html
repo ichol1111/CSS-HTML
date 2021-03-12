@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 500px;
+            height: 400px;
+            background-color: blue;
+            margin: 50px auto;
+        }
+
+        .box .buttonLeft {
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            height: 60px;
+            width: 30px;
+            background-color: black;
+        }
+
+        .box .buttonRight {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -30px;
+            height: 60px;
+            width: 30px;
+            background-color: black;
+        }
+
+        .box .down {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -50px;
+            width: 100px;
+            height: 30px;
+            background-color: black;
+        }
+
+        .advertise {
+            position: absolute;
+            bottom: 0;
+            width: 20px;
+            height: 5px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="buttonLeft"></div>
+        <div class="buttonRight"></div>
+        <div class="down"></div>
+        <div class="advertise"></div>
+    </div>
+</body>
+
+</html>

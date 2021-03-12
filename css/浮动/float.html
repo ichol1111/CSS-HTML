@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* clearfix 单伪元素写法 */
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        /* clearfix双伪元素写法 */
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        div {
+            width: 100%%;
+            background-color: black;
+        }
+
+        .box {
+            width: 100%;
+            /* overflow: hidden; */
+        }
+
+        .left {
+            width: 75%;
+            height: 50px;
+            float: left;
+            background-color: pink;
+        }
+
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<!-- 清除浮动
+1.额外标签法：在最后一个孩子的后面加上一个空标签，使用 style = "clear: both"
+2.父级添加 overflow: hidden
+3.使用clearfix,代码见css
+4.双伪元素，代码css -->
+
+<body>
+    <div class="box clearfix">
+        <div class="left">111</div>
+        <div class="left">222</div>
+        <div class="left">333</div>
+    </div>
+
+    <div style="height: 100px; margin-top: 30px;">heihei</div>
+
+</body>
+
+</html>
