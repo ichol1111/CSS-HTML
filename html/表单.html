@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input表单元素 -->
+    <form action="" method="" name="" align = "center">
+        <!-- maxlength规定最长的文本长度 -->
+        <label for="username">username: </label><input type="text" name="username" maxlength="5" id="username"><br>
+        password: <input type="password" name="password" id="pwd"><br>
+        <!-- radio和checkbox的name必须相同 -->
+        <!-- checked属性，默认选中radio和checkbox -->
+        sex: male<input type="radio" name="sex" value="male"> female <input type="radio" name="sex" value="female"><br>
+        hobby: food<input type="checkbox" name="hobby"> sports <input type="checkbox" name="hobby"><br>
+        <input type="checkbox" checked="checked">I agree to the regulation. <br>
+        <!-- 重置输入 -->
+        <input type="reset"> <br>
+        <input type="submit"> <br>
+        <input type="button" value="go fuck yourself"> <br>
+        <!-- 选择上传文件 -->
+        <input type="file"> <br>
+        <!-- label: 可将光标快速定位到对应id的输入域 -->
+        <label for="pwd">go to user name</label>
+    </form>
+    <p></p>
+ 
+    <!-- select表单元素 -->
+    <form action="" align = "center">
+        choose your food: <br>
+        <select name="food" id="food">
+            <!-- selected 默认选中 -->
+            <option value="shit" selected="selected">shit</option>
+            <option value="egg">egg</option>
+            <option value="shit egg">shit egg</option>
+        </select>
+    </form>
+
+    <!-- 文本域元素 -->
+    <form action="" align="center">
+        input your biography: <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>

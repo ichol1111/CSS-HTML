@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table是一个表格最外层标签，tr表示表格中的一行，td表示每行中的单元格, th表示表头单元格（会加粗居中显示） -->
+    <!-- align: 位置，left,right,center -->
+    <!-- border: 显示边框 -->
+    <!-- cellpadding：表格文字与边框的距离 -->
+    <!-- cellspacing: 单元格之间的空白 -->
+    <!-- width & height：表格的宽度和高度 -->
+    <table align="center" border="1" cellpadding="20" cellspacing="0" >
+        <tr>
+            <th>name</th><th>sex</th><th>age</th>
+        </tr>
+        <tr>
+            <td>john</td><td>male</td><td>23</td>
+        </tr>
+        <tr>
+            <td>jane</td><td>female</td><td>30</td>
+        </tr>
+    </table>
+
+    <p>
+    <table align="center" border="1" cellspacing="0">
+        <tr>
+            <th>name</th>
+            <th>link</th>
+        </tr>
+        <tr>
+            <td>google</td>
+            <td><a href="http://www.google.com" target="_blank">go to google</a></td>
+        </tr>
+    </table>
+    </p>
+    <!-- 合并单元格 -->
+    <!-- 跨行合并：rowspan="合并单元格的个数" -->
+    <!-- 跨列合并：colspan="合并单元格的个数" -->
+    <p>
+        <table border="1" cellspacing="0" align="center" height="350" width="500">
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </p>
+    <p>
+        <table border="1" cellspacing="0" align="center" height="350" width="500">
+            <tr>
+                <td colspan="3" rowspan="3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

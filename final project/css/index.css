@@ -1,0 +1,160 @@
+.main {
+    margin-left: 220px;
+    margin-top: 10px;
+    width: 980px;
+    height: 455px;
+}
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 165px;
+    border: solid #e4e4e4 1px;
+}
+.news .hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: #e4e4e4 dotted 1px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+.news .hd::after{
+    content: "more >";
+    float: right;
+}
+.news .bd {
+    padding-left: 15px;
+}
+.news .bd ul li a {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+}
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4eee4;
+    border-top: none;
+}
+.lifeservice ul{
+    width: 252px;
+}
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+.lifeservice ul li a {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+    margin-top: 12px;
+}
+.bargin {
+    margin-top: 5px;
+}
+.recom {
+    height: 163px;
+    margin-top: 12px;
+}
+.recom .hd {
+    float: left;
+    width: 205px;
+    height: 163px;
+    background: #cccccc url(../images/clock.png) no-repeat center 40px;
+    text-align: center;
+}
+.recom .hd .text{
+    display: inline-block;
+    margin-top: 110px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.recom .bd {
+    float: left;
+}
+.recom .bd ul li {
+    float: left;
+}
+.recom .bd ul li:nth-child(even) {
+    width: 0px;
+    height: 130px;
+    margin-top: 15px;
+    margin-left: -1px;
+    border: 0.5px solid #ddd;
+}
+.floor .applicant .hd {
+    margin-top: 20px;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.floor .applicant .hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.floor .applicant .hd .tab_list{
+    float: right;
+    line-height: 30px;
+}
+.floor .applicant .hd .tab_list ul li {
+    float: left;
+}
+.floor .applicant .hd .tab_list ul li a{
+    margin: 0 20px;
+}
+.floor .applicant .bd {
+    height: 361px;
+}
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col_210  ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+.col_210  ul {
+    padding-left: 12px;
+}
+.col_329 {
+    width: 329px;
+}
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+.col_219 {
+    width: 219px;
+}
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
